@@ -1,0 +1,113 @@
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #343C4B;
+    --text-color: #fff;
+    --main-color: #0ef;
+    --box-shadow: 0px 15px 25px rgba(0, 238, 255,.08);
+    --transition: all 0.5s ease;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-text{
+    color: var(--main-color);
+}
+
+.bg{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.img-size{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding-top: 60px;
+    padding-bottom: 140px;
+}
+
+.theme-shadow{
+    box-shadow: var(--box-shadow) !important;
+}
+
+.filter-img{
+    filter: drop-shadow(0px 15px 25px rgba(0, 238, 255, 0.5));
+}
+
+.iconbox{
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .1);
+    color: var(--main-color);
+    font-size: 34px;
+    flex: none;
+}
+
+.btn{
+    font-weight: 500 !important;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 30px !important; 
+    padding: 10px 24px;
+    border: 2px solid var(--main-color) !important;
+}
+
+.btn-brand{
+    background-color: var(--second-bg-color) !important;
+    color: var(--main-color) !important;
+}
+
+.btn-brand:hover{
+    background-color: var(--main-color) !important;
+    color: var(--second-bg-color) !important;
+}
+
+.social-icons a{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 100px;
+    color: var(--main-color);
+    margin-right: 10px;
+}
+
+.social-icons a:hover{
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons i{
+    font-size: 23px;
+}
+
+/* IMAGE ZOOM */
+.image-zoom{
+    position: relative;
+    overflow: hidden;
+}
+
+.image-zoom-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img{
+    transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img{
+    transform: scale(1.1);
+}
